@@ -1,0 +1,51 @@
+@import url(./fonts/style.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  padding: 100px 150px;
+  width: 100%;
+}
+
+.profile {
+  margin: 24px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .list .link {
+  outline: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.title {
+  color: #222;
+  font-family: "DM Serif Display";
+  font-size: 4rem;
+}
+
+.subtitle {
+  color: #222222bf;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #222;
+  gap: 8px;
+}

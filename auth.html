@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth - Succotash</title>
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="blur">
+        <!-- Go to Login -->
+        <div class="box">
+          <h1 class="headline">Sudah punya akun?</h1>
+          <button class="btn-primary" id="isRegister">Masuk</button>
+        </div>
+        <!-- Go to Register -->
+        <div class="box">
+          <h1 class="headline">Tidak punya akun?</h1>
+          <button class="btn-primary" id="isRegister">Buat</button>
+        </div>
+      </div>
+      <div class="auth">
+        <!-- Login Page -->
+        <div class="container-form">
+          <div class="form">
+            <h1 class="title">Masuk Akun</h1>
+            <input type="email" id="email-login" placeholder="Email" required />
+            <input
+              type="password"
+              id="password-login"
+              placeholder="Password"
+              required
+            />
+            <button type="submit" class="btn-primary" id="submit-login">
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- Register Page -->
+        <div class="container-form">
+          <div class="form">
+            <h1 class="title">Buat Akun</h1>
+            <input
+              type="text"
+              id="name-register"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="email"
+              id="email-register"
+              placeholder="Email"
+              required
+            />
+            <div class="selection">
+              <input type="radio" name="gender" id="programmer" value="p" />
+              <label for="programmer"> Programmer </label>
+              <input type="radio" name="gender" id="manager" value="m" />
+              <label for="manager"> Manager </label>
+            </div>
+            <input
+              type="password"
+              id="password-register"
+              placeholder="Password"
+              required
+            />
+            <button type="submit" class="btn-primary" id="submit-register">
+              Lanjut
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/auth/script.js"></script>
+    <script>
+      document.querySelectorAll("#isRegister").forEach((item) => {
+        item.addEventListener("click", () => {
+          document.querySelector("body").classList.toggle("active");
+          document.querySelector(".auth").classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
