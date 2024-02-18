@@ -73,7 +73,6 @@ function onSubmitRegister() {
     localStorage.setItem("register_email", emailRegister.value);
     localStorage.setItem("register_password", passwordRegister.value);
     alert("Register successfully ✅");
-    window.location = "index.html";
   }
 }
 
